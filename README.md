@@ -19,3 +19,18 @@ Input:
 Output:
 - A TXT file containing the data from the NPY file.
 
+## add_tmin.py
+
+This script is used to offset the time values in a given TXT file by t_0 or t_min amount.
+
+Input: 
+- input_file is the name of the input TXT file, with three columns. Time data is in the first column.
+- output_file is the name of the output TXT file.
+- offset is the value to be added to each time entry.
+
+Output:
+- The output will contain the updated time values in the first column, while the other two columns remain unchanged.
+
+
+
+
