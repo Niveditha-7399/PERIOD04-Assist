@@ -31,6 +31,15 @@ Input:
 Output:
 - The output will contain the updated time values in the first column, while the other two columns remain unchanged.
 
+## freq_vs_amp_tess_corot_compare.py
+This script is used to compare frequency vs amplitude plots from TESS and CoRoT data.
+
+Input:
+- file1 should be the frequency vs amplitude data from TESS
+- file2 should be the frequency vs amplitude data from CoRoT
+
+Output:
+- A plot comparing frequency vs amplitude from TESS and CoRoT
 
 
 
