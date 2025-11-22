@@ -69,4 +69,15 @@ Output:
 - latex_table.tex with the code ready to be copy pasted into
 editors like Overleaf.
 
+## time_vs_flux_with_fourier_fit.py
+This code reads a text file with time and flux data, and plots the flux as a function of time. Then, it fits a sine wave (fourier) using the data from another text file with data arranged as follows:
+F1	0.132873199944689	 0.00607471670398125 	 0.774073550773877 
+F2	0.288216710761312	 0.0018437020642556 	 0.0528653621299045 
+where the first column is the frequency index, second column is the frequency, third column is the amplitude, and the fourth column is the phase. The sine wave should be of the form: fit= z + sum of all (Amplitude * np.sin( (2*pi) * (frequency * time) + phase )) (fourier transform) and the value of z is set from PERIOD04.
 
+Input:
+- data1 is the TXT file containing the time and flux data.
+- data2 is the TXT file with the frequency index, frequency, amplitude, and phase data.
+
+Output:
+- A plot of flux vs time with the Fourier fit overlaid.
