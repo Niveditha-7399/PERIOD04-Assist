@@ -41,5 +41,17 @@ Input:
 Output:
 - A plot comparing frequency vs amplitude from TESS and CoRoT
 
+## fix_trends_in_range.py
 
+This code is used to remove trends in flux data using polynomial fitting.
 
+Input:
+- input_file is the name of the input file containing time and flux data.
+- output_file is the name of the output file to save data after removing trends.
+- degree is the degree of the polynomial to use for fitting (default is 1 for linear).
+- tmin and tmax define the time interval for removing the trend (default is entire range).
+- plot_file is the name of the output plot file with the original and adjusted flux.
+
+Output:
+- A text file with the detrended flux data.
+- A plot showing the original flux with the polynomial used for fitting and the adjusted flux.
