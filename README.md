@@ -55,3 +55,18 @@ Input:
 Output:
 - A text file with the detrended flux data.
 - A plot showing the original flux with the polynomial used for fitting and the adjusted flux.
+
+## latex_table_creation.py
+This code is used for generating a LaTeX table having 5 columns, the last one being empty for remarks. The first 4 columns are: Index, Frequency, Amplitude, and Phase. The title and label of the table can be set with the corresponding global variables.
+
+Input:
+- main_file is the TXT document containing frequency index, frequencies, 
+amplitudes, and phases.
+- error_file is the TXT document containing frequency index, and the errors
+associated with frequencies, amplitudes, and phases.
+
+Output:
+- latex_table.tex with the code ready to be copy pasted into
+editors like Overleaf.
+
+
