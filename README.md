@@ -102,3 +102,14 @@ Input:
 Output: 
 - A TXT file with time and flux data.
 
+## echelle_phase_plot_creation.py
+This code reads a TXT file with frequency, amplitude and phase data retrieved from PERIOD04 analysis with pre-whiitening process. Then a plot of frequency vs echelle phase is created for the given period of the binary system.
+
+Input:
+- file is the name of the input TTXT file with the data arranged as follows: frequency index, frequency, amplitude and phase. 
+
+- period is the orbital period of the binary system.
+- choice is for scaling the points with amplitude [Y/N].
+
+Output:
+- Echelle phase vs frequency plot saved as 'echelle_phase_vs_frequency' PNG file. 
