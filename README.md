@@ -81,3 +81,15 @@ Input:
 
 Output:
 - A plot of flux vs time with the Fourier fit overlaid.
+
+## period04_fouriers_overlaid.py
+This code reads four TXT files containg frequency and amplitude data from PERIOD04 analysis after the first frequency is identified, and plot this data overlaid on a frequency vs amplitude plot with alpha 0.7 to see the overlapping values.
+
+Input:
+- names of four TXT files that contain data as 'frequency' and 'amplitude' columns.
+
+Output:
+- A PNG file with the name 'overlaid_first_fouriers.png'.
+
+
+
