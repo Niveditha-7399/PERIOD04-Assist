@@ -91,5 +91,14 @@ Input:
 Output:
 - A PNG file with the name 'overlaid_first_fouriers.png'.
 
+## mag_to_flux.py
 
+This code is written by Niveditha Parthasarathy to read a light curve TXT file with time and magnitude data, then convert the magnitudes to flux  and enter this data as time and flux into a new TXT file.
+
+Input:
+- input_file is the name of the TXT file with time and magnitude data.
+- output_file is the name of the output TXT file that will have the time and flux data.
+
+Output: 
+- A TXT file with time and flux data.
 
