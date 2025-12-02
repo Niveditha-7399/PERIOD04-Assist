@@ -29,6 +29,23 @@ Output:
 - A text file with the detrended flux data.
 - A plot showing the original flux with the polynomial used for fitting and the adjusted flux.
 
+## adjust_baseline.py
+This scripted is created by Niveditha Parthasarathyto remove long term trends that move the light curve away from the baseline using the lightkurve package. It uses a Savitzky–Golay filter to fit any such trends and then remove it. If there are any misidentified trends from missing datapoints, use 'time_intervals_to_not_consider' variabble to create a mask exclusing those regions from the determination of the trends.
+
+The window length is set to 401 like they do in the website tutorial https://heasarc.gsfc.nasa.gov/docs/tess/LightCurve-object-Tutorial.html
+
+Input:
+- input_filename is the name of the FITS file containing the light ccurve data.
+- output_filename is the name of the file to save the FITS file with the flattened data.
+- window_length is the length of the filter window (this should be an odd integer).
+- plots_folder is the name of the folder where PNG files (plots) should be saved.
+- fits_folder is the name of the folder where the FITS files should be saved.
+
+Output:
+- A PNG file with the plot showing the flat and original light curves. It is saved in the plots_folder.
+- A FITS file with the flattened light curve data. It is saved in the fits_folder.
+
+
 ## time_vs_flux_with_fourier_fit.py
 This code reads a text file with time and flux data, and plots the flux as a function of time. Then, it fits a sine wave (fourier) using the data from another text file with data arranged as follows:
 F1	0.132873199944689	 0.00607471670398125 	 0.774073550773877 
