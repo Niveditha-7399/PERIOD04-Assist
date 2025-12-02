@@ -30,7 +30,7 @@ Output:
 - A plot showing the original flux with the polynomial used for fitting and the adjusted flux.
 
 ## adjust_baseline.py
-This scripted is created by Niveditha Parthasarathyto remove long term trends that move the light curve away from the baseline using the lightkurve package. It uses a Savitzky–Golay filter to fit any such trends and then remove it. If there are any misidentified trends from missing datapoints, use 'time_intervals_to_not_consider' variabble to create a mask exclusing those regions from the determination of the trends.
+This script removes long term trends that move the light curve away from the baseline using the lightkurve package. It uses a Savitzky–Golay filter to fit any such trends and then remove it. If there are any misidentified trends from missing datapoints, use 'time_intervals_to_not_consider' variabble to create a mask exclusing those regions from the determination of the trends.
 
 The window length is set to 401 like they do in the website tutorial https://heasarc.gsfc.nasa.gov/docs/tess/LightCurve-object-Tutorial.html
 
