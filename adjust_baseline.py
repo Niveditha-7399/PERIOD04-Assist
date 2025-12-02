@@ -1,8 +1,8 @@
 """
-This scripted is created by Niveditha Parthasarathy
+This script is created by Niveditha Parthasarathy
 to remove long term trends that move the light curve away
 from the baseline using the lightkurve package.
-It uses a Savitzky–Golay filter to fit any such trends
+It uses a Savitzkyâ€“Golay filter to fit any such trends
 and then remove it. If there are any misidentified trends 
 from missing datapoints, use 'time_intervals_to_not_consider'
 variabble to create a mask exclusing those regions from
@@ -103,5 +103,6 @@ tbl = Table([flat_lc.time.value, flat_lc.flux.value], names=("TIME", "FLUX"))
 tbl.write(output_filename, format="fits", overwrite=True)
 
 print(f"fits file after remmmoving trend saved to: {output_filename}")
+
 
 
